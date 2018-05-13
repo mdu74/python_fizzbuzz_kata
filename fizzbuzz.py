@@ -1,13 +1,14 @@
-class FizzBuzz(object):
+from validation import Divisible
+
+class FizzBuzz():
     def isFizzBuzz(number):
-        if number % 5 == 0 and number % 3 == 0:
+        if Divisible.ByFive(number) and Divisible.ByThree(number):
             return "FizzBuzz"
 
-        if number % 5 == 0:
+        if Divisible.ByFive(number):
             return "Buzz"
 
-        if number % 3 == 0:
+        if Divisible.ByThree(number):
             return "Fizz"
 
         return number
-    
