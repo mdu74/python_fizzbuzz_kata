@@ -2,9 +2,9 @@ import unittest
 from fizzbuzz import FizzBuzz
 
 class TestFizzBuzz(unittest.TestCase):
-    def test_IsFizzBuzz_GivenNumberNotDivisibleBy3Or5_ShouldReturnNumber(self):
-        numbersNotDivisibleBy3or5 = [1,4,8,14,16,22]
-        for eachNumber in numbersNotDivisibleBy3or5:
+    def test_IsFizzBuzz_GivenNonePrimeNumbersNotDivisibleBy3Or5_ShouldReturnNumber(self):
+        nonePrimeNumbersNotDivisibleBy3or5 = [1,4,8,14,16,22]
+        for eachNumber in nonePrimeNumbersNotDivisibleBy3or5:
             # Arrange
             number = eachNumber
             # Act
