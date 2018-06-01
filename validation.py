@@ -1,4 +1,4 @@
-class Divisible():
+class Divisible:
     def ByFive(number):
         return number % 5 == 0
 
